@@ -107,6 +107,40 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductImageController.GetAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.IProductImageService)">
+            <summary>
+            Retorna a imagem do produto caso exista
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductImageController.GetAllAsync(WebApiAspNetCore.Domain.Interfaces.Services.IProductImageService)">
+            <summary>
+            Retorna a lista de imagem de produtos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductImageController.AddAsync(WebApiAspNetCore.Domain.Entities.ProductImage,WebApiAspNetCore.Domain.Interfaces.Services.IProductImageService,WebApiAspNetCore.Domain.Validator.ProductImageValidator)">
+            <summary>
+            Adiciona imagem do produto
+            </summary>
+            <param name="productImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductImageController.UpdateAsync(WebApiAspNetCore.Domain.Entities.ProductImage,WebApiAspNetCore.Domain.Interfaces.Services.IProductImageService,WebApiAspNetCore.Domain.Validator.ProductImageValidator)">
+            <summary>
+            Atualiza imagem do produto caso exista
+            </summary>
+            <param name="productImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductImageController.RemoveAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.IProductImageService)">
+            <summary>
+            Remove imagem do produto caso exista
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="P:WebApiAspNetCore.Domain.Entities.Base.BaseModel.Id">
             <summary>
             Id
@@ -145,6 +179,36 @@
         <member name="P:WebApiAspNetCore.Domain.Entities.Product.IdCategory">
             <summary>
             Categoria do produto
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.ProductImage.Filename">
+            <summary>
+            Nome da imagem
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.ProductImage.File">
+            <summary>
+            Arquivo da imagem
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.ProductImage.Size">
+            <summary>
+            Tamanho da imagem
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.ProductImage.Product">
+            <summary>
+            Produto referente a imagem
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.ProductImage.Active">
+            <summary>
+            Mostra se a imagem está ativa
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.ProductImage.CreateAt">
+            <summary>
+            Data em que a imagem foi adicionada
             </summary>
         </member>
     </members>

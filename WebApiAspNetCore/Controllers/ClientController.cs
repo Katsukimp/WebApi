@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Security.Cryptography.X509Certificates;
 using WebApiAspNetCore.Controllers.Shared;
 using WebApiAspNetCore.Domain.Entities;
 using WebApiAspNetCore.Domain.Interfaces.Services;

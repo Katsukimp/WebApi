@@ -16,6 +16,7 @@ namespace WebApiAspNetCore.Infrastructure.ExtensionMethods
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IProductImageRepository, ProductImageRepository>();
             return services;
         }
 
@@ -24,6 +25,7 @@ namespace WebApiAspNetCore.Infrastructure.ExtensionMethods
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IClientService, ClientService>();
             services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IProductImageService, ProductImageService>();
             return services;
         }
 
@@ -32,6 +34,7 @@ namespace WebApiAspNetCore.Infrastructure.ExtensionMethods
             services.AddValidatorsFromAssemblyContaining<ClientValidator>(ServiceLifetime.Transient);
             services.AddValidatorsFromAssemblyContaining<ProductValidator>(ServiceLifetime.Transient);
             services.AddValidatorsFromAssemblyContaining<CategoryValidator>(ServiceLifetime.Transient);
+            services.AddValidatorsFromAssemblyContaining<ProductImageValidator>(ServiceLifetime.Transient);
             return services;
         }
 
