@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiAspNetCore</name>
+    </assembly>
+    <members>
+        <member name="M:WebApiAspNetCore.Controllers.CategoryController.GetAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.ICategoryService)">
+            <summary>
+            Retorna categoria caso exista
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.CategoryController.GetAllAsync(WebApiAspNetCore.Domain.Interfaces.Services.ICategoryService)">
+            <summary>
+            Retorna todas as categorias
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.CategoryController.AddAsync(WebApiAspNetCore.Domain.Entities.Category,WebApiAspNetCore.Domain.Interfaces.Services.ICategoryService,WebApiAspNetCore.Domain.Validator.CategoryValidator)">
+            <summary>
+            Adiciona uma categoria caso seja válida.
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.CategoryController.UpdateAsync(WebApiAspNetCore.Domain.Entities.Category,WebApiAspNetCore.Domain.Interfaces.Services.ICategoryService,WebApiAspNetCore.Domain.Validator.CategoryValidator)">
+            <summary>
+            Atualiza registro de categoria caso seja válido e encontrado.
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.CategoryController.RemoveAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.ICategoryService)">
+            <summary>
+            Remove registro de categoria caso seja válido e encontrado.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ClientController.GetAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.IClientService)">
+            <summary>
+            Retorna cliente caso exista
+            </summary>
+            <param name="Id">Código para consulta</param>
+            <returns>Retorna um cliente caso o id informado sejá válido.</returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ClientController.AddAsync(WebApiAspNetCore.Domain.Entities.Client,WebApiAspNetCore.Domain.Interfaces.Services.IClientService,WebApiAspNetCore.Domain.Validator.ClientValidator)">
+            <summary>
+            Adiciona um cliente caso seja válido.
+            </summary>
+            <param name="client">Cliente há ser inserido</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ClientController.GetAllAsync(WebApiAspNetCore.Domain.Interfaces.Services.IClientService)">
+            <summary>
+            Retorna todos os registros de clientes encontrados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ClientController.UpdateAsync(WebApiAspNetCore.Domain.Entities.Client,WebApiAspNetCore.Domain.Interfaces.Services.IClientService,WebApiAspNetCore.Domain.Validator.ClientValidator)">
+            <summary>
+            Atualiza o registro de um cliente caso seja encontrado.
+            </summary>
+            <param name="client"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ClientController.RemoveAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.IClientService)">
+            <summary>
+            Remove o registro do cliente caso seja encontrado.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductController.GetAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.IProductService)">
+            <summary>
+            Retorna um produto caso o mesmo exista 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductController.GetAllAsync(WebApiAspNetCore.Domain.Interfaces.Services.IProductService,System.String)">
+            <summary>
+            Retorna todos os produtos
+            </summary>
+            <param name="category">Categorizador usado para consulta</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductController.AddAsync(WebApiAspNetCore.Domain.Entities.Product,WebApiAspNetCore.Domain.Interfaces.Services.IProductService,WebApiAspNetCore.Domain.Validator.ProductValidator)">
+            <summary>
+            Adiciona produto caso sejá válido
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductController.UpdateAsync(WebApiAspNetCore.Domain.Entities.Product,WebApiAspNetCore.Domain.Interfaces.Services.IProductService,WebApiAspNetCore.Domain.Validator.ProductValidator)">
+            <summary>
+            Atualiza o registro de um produto caso exista
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiAspNetCore.Controllers.ProductController.RemoveAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.IProductService)">
+            <summary>
+            Removeo o registro de produto caso seja encontrado
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Base.BaseModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Category.Name">
+            <summary>
+            Nome da Categoria
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Client.Name">
+            <summary>
+            Nome do cliente
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Client.Lastname">
+            <summary>
+            Sobrenome do cliente
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Product.Description">
+            <summary>
+            Descrição do produto
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Product.Price">
+            <summary>
+            Preço do produto
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Product.Quantity">
+            <summary>
+            Quantidade do produto
+            </summary>
+        </member>
+        <member name="P:WebApiAspNetCore.Domain.Entities.Product.IdCategory">
+            <summary>
+            Categoria do produto
+            </summary>
+        </member>
+    </members>
+</doc>
