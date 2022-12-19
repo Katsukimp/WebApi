@@ -102,7 +102,7 @@
         </member>
         <member name="M:WebApiAspNetCore.Controllers.ProductController.RemoveAsync(System.Guid,WebApiAspNetCore.Domain.Interfaces.Services.IProductService)">
             <summary>
-            Removeo o registro de produto caso seja encontrado
+            Remover o registro de produto caso seja encontrado
             </summary>
             <param name="id"></param>
             <returns></returns>

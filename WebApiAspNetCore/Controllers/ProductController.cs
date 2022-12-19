@@ -82,7 +82,7 @@ namespace WebApiAspNetCore.Controllers
         }
 
         /// <summary>
-        /// Removeo o registro de produto caso seja encontrado
+        /// Remover o registro de produto caso seja encontrado
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

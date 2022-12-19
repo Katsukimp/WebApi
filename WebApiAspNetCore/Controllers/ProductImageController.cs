@@ -8,6 +8,7 @@ namespace WebApiAspNetCore.Controllers
 {
     public class ProductImageController : BaseController
     {
+
         /// <summary>
         /// Retorna a imagem do produto caso exista
         /// </summary>
